@@ -48,7 +48,7 @@ async function fileToBase64(file) {
 export async function processImageSearch(file) {
   try {
     // Get request data for ArcJet
-    const req = await request();
+    const req = await request();       
 
     // Check rate limit
     const decision = await aj.protect(req, {
