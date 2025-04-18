@@ -15,7 +15,7 @@ export async function getCarFilters() {
       where: { status: "AVAILABLE" },
       select: { make: true },
       distinct: ["make"],
-      orderBy: { make: "asc" },     
+      orderBy: { make: "asc" },
     });
 
     // Get unique body types
@@ -264,7 +264,7 @@ export async function toggleSavedCar(carId) {
  */
 export async function getCarById(carId) {
   try {
-    // Get current user if authenticated       
+    // Get current user if authenticated
     const { userId } = await auth();
     let dbUser = null;
 
@@ -275,7 +275,7 @@ export async function getCarById(carId) {
     }
 
     // Get car details
-    const car = await db.car.findUnique({     
+    const car = await db.car.findUnique({
       where: { id: carId },
     });
 
