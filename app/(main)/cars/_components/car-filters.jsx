@@ -252,7 +252,7 @@ export const CarFilters = ({ filters }) => {
         </SelectContent>
       </Select>
 
-      {/* Desktop Filters */}                        
+      {/* Desktop Filters */}
       <div className="hidden lg:block sticky top-24">
         <div className="border rounded-lg overflow-hidden bg-white">
           <div className="p-4 border-b bg-gray-50 flex justify-between items-center">

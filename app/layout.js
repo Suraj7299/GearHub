@@ -1,4 +1,3 @@
-import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
@@ -21,9 +20,7 @@ export default function RootLayout({ children }) {
         </head>
         <body className={`${inter.className}`}>
           <Header />
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <main className="min-h-screen">{children}</main>
-          </ThemeProvider>
           <Toaster richColors />
 
           <footer className="bg-blue-50 py-12">

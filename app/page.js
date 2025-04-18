@@ -19,7 +19,7 @@ export default async function Home() {
 
   return (
     <div className="flex flex-col pt-20">
-    
+      {/* Hero Section with Gradient Title */}
       <section className="relative py-16 md:py-28 dotted-background">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
@@ -31,12 +31,12 @@ export default async function Home() {
             </p>
           </div>
 
-         
+          {/* Search Component (Client) */}
           <HomeSearch />
         </div>
       </section>
 
-      
+      {/* Featured Cars */}
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-8">
@@ -55,7 +55,7 @@ export default async function Home() {
         </div>
       </section>
 
-      
+      {/* Browse by Make */}
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-8">
@@ -90,7 +90,7 @@ export default async function Home() {
         </div>
       </section>
 
-      
+      {/* Why Choose Us */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-12">
@@ -130,7 +130,7 @@ export default async function Home() {
         </div>
       </section>
 
-    
+      {/* Browse by Body Type */}
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-8">
@@ -169,7 +169,7 @@ export default async function Home() {
         </div>
       </section>
 
-      
+      {/* FAQ Section with Accordion */}
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-8">
@@ -186,7 +186,7 @@ export default async function Home() {
         </div>
       </section>
 
-      
+      {/* CTA Section */}
       <section className="py-16 dotted-background text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
@@ -211,7 +211,3 @@ export default async function Home() {
     </div>
   );
 }
-
-
-
-
