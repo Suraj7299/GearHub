@@ -112,18 +112,17 @@ export function HomeSearch() {
   return (
     <div>
       <form onSubmit={handleTextSearch}>
-        <div className="relative flex items-center">
-          <Search className="absolute left-3 w-5 h-5" />
+        <div className="relative flex items-center h-8">
           <Input
             type="text"
             placeholder="Enter make, model, or use our AI Image Search..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="pl-10 pr-12 py-6 w-full rounded-full border-gray-300 bg-white/95 backdrop-blur-sm"
+            className="pl-10 pr-24 py-4 sm:py-5 w-full rounded-full border border-gray-300 bg-white/95 backdrop-blur-sm text-sm sm:text-base truncate overflow-x-auto whitespace-nowrap"
           />
 
           {/* Image Search Button */}
-          <div className="absolute right-[100px]">
+          <div className="absolute right-[80px]">
             <Camera
               size={35}
               onClick={() => setIsImageSearchActive(!isImageSearchActive)}
@@ -135,7 +134,7 @@ export function HomeSearch() {
             />
           </div>
 
-          <Button type="submit" className="absolute right-2 rounded-full">
+          <Button type="submit" className="absolute right-1 rounded-full">
             Search
           </Button>
         </div>

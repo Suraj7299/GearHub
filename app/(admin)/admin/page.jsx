@@ -2,8 +2,8 @@ import { getDashboardData } from "@/actions/admin";
 import { Dashboard } from "./_components/dashboard";
 
 export const metadata = {
-  title: "Dashboard | Vehiql Admin",
-  description: "Admin dashboard for Vehiql car marketplace",
+  title: "Dashboard | GearHub Admin",
+  description: "Admin dashboard for GearHub car marketplace",
 };
 
 export default async function AdminDashboardPage() {

@@ -39,7 +39,7 @@ export const Sidebar = () => {
       <div className="hidden md:flex h-full flex-col overflow-y-auto bg-white shadow-sm border-r">
         <div className="p-6">
           <Link href="/admin">
-            <h1 className="text-xl font-bold">Vehiql Admin</h1>
+            <h1 className="text-xl font-bold">GearHub Admin</h1>
           </Link>
         </div>
         <div className="flex flex-col w-full">
@@ -60,7 +60,7 @@ export const Sidebar = () => {
             </Link>
           ))}
         </div>
-        <div className="mt-auto p-6">
+        <div className="mt-auto mb-10 p-6">
           <SignOutButton>
             <button className="flex items-center gap-x-2 text-slate-500 text-sm font-medium transition-all hover:text-slate-600">
               <LogOut className="h-5 w-5" />
